@@ -1,8 +1,15 @@
-Reproduce:
+Reproduces issue [https://github.com/ray-project/ray/issues/24296](https://github.com/ray-project/ray/issues/24296)
+
+Setup:
 
 ```
 nix run nixpkgs#python3 -- -m venv .venv --copies
 pip install -r requirements.txt
+```
+
+Reproduce:
+
+```
 python -m test.test_file_based_datasource
 ```
 
